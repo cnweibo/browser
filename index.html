@@ -1,0 +1,15 @@
+<html>
+	<body>
+		<h1>fsfasfdas</h1>
+<script>
+// firefox innerText not support
+if(!HTMLElement.prototype.innerText){
+    HTMLElement.prototype.innerText = HTMLElement.prototype.textContent;
+}
+	var h1 = document.getElementsByTagName('h1')[0];
+	console.log(h1);
+	h1.innerHTML = "changed";
+
+</script>
+	</body>
+</html>
